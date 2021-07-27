@@ -4,24 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_2.css">
+    <link rel="stylesheet" href="CSS/style_main.css">
+    <link rel="stylesheet" href="CSS/style_header.css">
+    <link rel="stylesheet" href="CSS/style_cadastrocategoria.css">
     <title>Cadastro de Categoria</title>
 </head>
 <body>
-    <nav>
-        <a href="Telaprincipal.html">Tela Principal</a>
-    </nav>
-    <hr>
-    <h1>Cadastro</h1>
-    <br>
-    <label for="id_categoria">Categoria:</label><input type="number" name="id" id="id_categoria">
-    <br>
-    <label for="nome_categoria">Nome:</label><input type="text" name="nome_categoria" id="nome_categoria">
-    <br>
-    <label for="descricao_categoria">Categoria:</label><input type="text" name="descricao_categoria" id="descricao_categoria">
-    <br>
-    <input type="submit" value="salvar">
-    <br>
-    <hr>
+    <header>
+        <div id="logo">
+            <a href="">
+            <img src="Logo.png" alt="Logo Havan" title="Logo Havan">
+        </a>
+        </div>
+            <nav id="menu-principal">
+                <Ul>
+                    <li>
+                        <a href="Cadastro.html">Cadastro de Categoria</a>
+                    </li>
+                    <li>
+                        <a href="home.html">Tela Principal</a>
+                    </li>
+                    <li>
+                        <a href="TabelaCategoria.html">Lista de Categoria</a>
+                    </li>
+                </Ul>
+            </nav>
+        <!-- colocar logo -->
+    </header>
+    <main>
+        <hr>
+        <form action="" method="POST">
+            <div class="form-item">
+                <label for="id_categoria">Categoria:</label><input type="number" name="id" id="id_categoria">
+            </div>
+            <div class="form-item">
+                <label for="nome_categoria">Nome:</label><input type="text" name="nome_categoria" id="nome_categoria">
+            </div>
+            <div class="form-item">
+                <label for="descricao_categoria">Categoria:</label><input type="text" name="descricao_categoria" id="descricao_categoria">
+            </div>
+            <hr>
+            <input class=btnprincipal type="submit" value="salvar">
+        </form>
+        <br>
+        <hr>
+    </main>
+    <footer>
+        <h4>Todos os direitos reservados <br /> &copy; HavanLabs</h4>
+    </footer>
 </body>
 </html>

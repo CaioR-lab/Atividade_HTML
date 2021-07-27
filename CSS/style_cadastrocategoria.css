@@ -1,0 +1,28 @@
+form{
+    margin: 20px auto 10px;
+    width:50%;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.form-item{
+    text-align: right;
+}
+label{
+    margin-right: 10px;
+    color:rgb(204, 204, 204);
+}
+input[type="text"], input[type="number"]{
+    background: #e9e8e8;
+    border: 1px solid rgb(204, 204, 204);
+    height: 30px;
+    margin: 5px 0;
+    width: 80%;
+    padding: 2px 15px;
+    border-radius: 8px;
+    color: rgb(204, 204, 204);
+}
+
+input[type="submit"]{
+    margin: 10px 20%;
+    cursor: pointer;
+}

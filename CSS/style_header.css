@@ -1,0 +1,60 @@
+header{
+    background-color: rgb(17, 17, 17);
+    height: 100px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px 0
+}
+#logo{
+    height: 50px;
+    width: 10%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    }
+#logo img{
+    width: 80px;
+    }
+#menu-principal{
+    /* background: #0f0; */
+    height: 50px;
+    width: 60%;
+    margin-right: 10%;
+    text-align: left;
+}
+#menu-principal ul{
+    margin-top: 10px;
+    list-style: none;
+}
+#menu-principal ul li{
+    display: inline-block;
+    background: rgb(70, 70, 70);
+    border: solid 1px rgb(70, 70, 70);
+}
+#menu-principal ul li:hover{
+    background: rgb(37, 37, 37);
+    border: solid 1px rgb(37, 37, 37);
+}
+#menu-principal ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    color: black;
+}
+#menu-principal ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+#usuario{
+    height: 50px;
+    width: 5%;
+    margin-right: 5%;
+    text-align: right;
+}
+#usuario img{
+    width: 50px;
+    border-radius: 30px;
+    border:rgb(70, 70, 70) 2px solid;
+}
+

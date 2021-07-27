@@ -1,0 +1,38 @@
+.cabecalho-crud h1{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    }
+.cabecalho-crud{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+table{
+    border:1px solid black;
+    margin: 20px auto 10px;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+table thead{
+    background:rgb(190, 190, 190) ;
+    color: black;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+th,tr,td{
+    border:1px solid black;
+    border-collapse: collapse;
+
+}
+
+td{
+    padding: 10px 5px;
+    color:rgb(190, 190, 190) ;
+}
+table thead tr th{
+    
+}
