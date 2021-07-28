@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <a href="https://github.com/"></a>
+        <button onclick="NovaCategoria()">Categoria</button>
+        <button onclick="Parametros()">Passar parametros</button>
+        <button onclick="Soma()">Somar parametros</button>
+        <button onclick="AdicionarLink()">AdicionarLink</button>
+        <button onclick="MudarCor()">AdicionarBorda</button>
+        <button onclick="AdicionarBorda()">AdicionarBorda</button>
+        <input id = "n1" type="number">
+        <input id = "n2" type="number">
+        
+        <div id='background' style="width: 100%; height: 200px;"></div>
+        <a href=""></a>
+    </div>
+</body>
+<script>
+    NomeConsole()
+    Parametros()
+    function NomeConsole(){
+        console.log ("Script sendo executado")
+    }
+    function NovaCategoria(){
+        alert('Categoria Criada')
+        onclick
+    }
+    function Parametros(numero1,numero2){
+        let numero1 = document.getElementById ("n1")
+        let numero2 = document.getElementById ("n2")
+        let num1 = parseInt(numero1.value)
+        let num2 = parseInt(numero2.value)
+        console.log (`numero1=${num1}, numero2=${num2},`)
+    }
+
+    function Soma(numero1,numero2){
+        numero1 = num1
+        numero2 = num2
+        somar = numero1 + numero2
+        consol.log(somar)
+        return somar
+    }
+
+    function AdicionarLink(){
+        let backgrounddoc = document.getElementById("background")
+        backgrounddoc.innerHTML += "<a href='https://github.com/CaioR-lab'>Teste</a><br>";
+    }
+
+    function MudarCor(){
+        let backgrounddoc = document.getElementById("background")
+        backgrounddoc.style.backgroundColor = "Black"
+    }
+
+    function AdicionarBorda(){
+        let backgrounddoc = document.getElementById("background")
+        backgrounddoc.style.border = "solid gray";
+    }
+</script>
+</html>
