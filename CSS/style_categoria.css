@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 125px;
 }
 table{
     border:1px solid black;
@@ -24,7 +25,7 @@ table thead{
 }
 
 th,tr,td{
-    border:1px solid black;
+    /* border:1px solid black; */
     border-collapse: collapse;
 
 }
@@ -33,6 +34,26 @@ td{
     padding: 10px 5px;
     color:rgb(190, 190, 190) ;
 }
-table thead tr th{
-    
+
+.opcoes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.opcoes a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.opcoes .editar{
+color: rgb(59, 255, 59);
+}
+.opcoes .excluir{
+color: rgb(255, 0, 0);
+}
+.opcoes .editar:hover{
+color: black;
+}
+.opcoes .excluir:hover{
+color: black;
 }
