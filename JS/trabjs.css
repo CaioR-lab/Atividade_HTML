@@ -15,6 +15,10 @@ a{text-decoration: none;}
 background-color: chartreuse;
 }
 
+#formulario{
+    font-size: 50;
+}
+
 body header{
     background-color: rgb(39, 39, 39);
 }
