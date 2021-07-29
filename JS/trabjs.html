@@ -5,83 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="trabjs.css">
-        <title>Document</title>
+        <title>Cadastro</title>
     </head>
     <body>
-        <header>
-            <a href="https://github.com/"></a>
-            <button onclick="NovaCategoria()">Categoria</button>
-            <button onclick="Parametros()">Passar parametros</button>
-            <button onclick="Soma(n1.value, n2.value)">Somar parametros</button>
-            <button onclick="AdicionarLink()">AdicionarLink</button>
-            <button onclick="MudarCor()">AdicionarCor</button>
-            <button onclick="AdicionarBorda()">AdicionarBorda</button>
-            <input id = "n1" type="number">
-            <input id = "n2" type="number">
-            
-            <div id='background' style="width: 100%; height: 200px;"></div>
-        </div>
-        <main>
+        <div id="cadastrocategoria">
             <h1>Cadastro Categoria</h1>
-    <label for="id">Id:</label> <input type="number" name="id" id="id"> <br />
-    <label for="nome">Nome:</label> <input type="text" name="nome" id="nome"> <br />
-    <label for="descricao">Descricao:</label> <input type="text" name="desricao" id="descricao"> <br />
-    <button onclick="Salvar()">Salvar</button>
-            <table id="tabela">
-                <thead>
-                    <tr>
-                        <th>iD</th>
-                        <th>Nome</th>
-                        <th>Descricao</th>
-                    </tr>
-                </thead>
-                <tbody>
+        </div>
+                <label for="id">Id:</label> <input type="number" name="id" id="id"> <br />
+                <label for="nome">Nome:</label> <input type="text" name="nome" id="nome"> <br />
+                <label for="descricao">Descricao:</label> <input type="text" name="desricao" id="descricao"> <br />
+                <button onclick="salvar()">Salvar</button>
 
-                </tbody>
-
-            </table>
-            <div id='background' style="width: 100%; height: 200px;"></div>
-        </main>
-    </header>
-    <script>
-        NomeConsole()
-        function NomeConsole(){
-            console.log ("Script sendo executado")
-        }
-        function NovaCategoria(){
-            alert('Categoria Criada')
-            onclick
-        }
-        function Parametros(numero1,numero2){
-            let input1 = document.getElementById ("n1")
-            let input2 = document.getElementById ("n2")
-            num1 = parseInt(input1.value)
-            num2 = parseInt(input2.value)
-            console.log (`numero1=${num1}, numero2=${num2},`)
-        }
-    
-        function Soma(n1,n2){        
-            soma = parseInt(n1) + parseInt(n2);
-            console.log (soma);
-            
-        }
-    
-        function AdicionarLink(){
-            let backgrounddoc = document.getElementById("background")
-            backgrounddoc.innerHTML += "<a href='https://github.com/CaioR-lab'>LinkGit</a><br>";
-        }
-    
-        function MudarCor(){
-            let backgrounddoc = document.getElementById("background")
-            backgrounddoc.style.backgroundColor = "Black"
-        }
-    
-        function AdicionarBorda(){
-            let backgrounddoc = document.getElementById("background")
-            backgrounddoc.style.border = "solid gray";
-        }
-    </script>
-<</script>
-<script src="table.js"></script>
+<script src="../JS/salvar.js"></script>
 </body>
 </html>
