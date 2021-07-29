@@ -31,13 +31,14 @@ main h1{
 .cabecalho-crud{
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
+    margin-left: 50px;
 }
 .botao-principal{
     text-decoration: none;
     display: block;
     background: rgb(59, 59, 59);
     padding: 10px 30px;
-    margin-bottom: 5px;
     color: #fff;
     text-transform: uppercase;
     border:1px solid rgb(59, 59, 59);
