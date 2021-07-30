@@ -1,0 +1,23 @@
+label {
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+main {
+    height: 100px;
+    width: 400px;
+}
+#cad {
+    display: block;
+    height: 100px;
+    width: 400px;
+    background-color: tomato;
+}
+
+#cad input{
+
+}
+
+#cad label{
+    text
+}

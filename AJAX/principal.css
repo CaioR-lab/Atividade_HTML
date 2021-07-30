@@ -1,0 +1,156 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    margin:  10px 10px 0px 10px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #647C9A;
+}
+header nav{
+    margin: 0px 10px;
+    background-color: rgb(30, 44, 29);
+    width: 100%;
+    height: 100px; 
+    display: inline-block;
+    box-shadow: 0 0 10px 0
+    
+}
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+}
+#menudiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    width: 98.5%;
+    background-color: #2C353F;
+    margin-right: 10px;
+    
+}
+
+
+#menudiv li{
+    margin-top: 32px;
+display: inline-block;
+
+}
+#menudiv ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    background-color: #67809F;
+}
+#menudiv a{
+    display: inline-block;
+}
+
+#areaprincipal{
+    margin: 10px;
+    height: 470px;
+    width: 100%;
+    background-color: #445261;
+}
+
+#areaprincipal h1{
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin: 5px 0px 0px 8px;
+}
+#menulateral{
+    margin: 10px 0px 0px 10px;
+    width: 20%;
+    background-color: #67809F;
+    height: 470px;
+}
+
+/* !BOTOES */
+#botao1{
+    height: 35px;
+    width: 5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    
+    }
+#botao1 img{
+    width: 35px;
+    cursor:pointer;
+}
+#btn1{
+    background-color: transparent;
+}
+#botao2{
+    height: 35px;
+    width: 10%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+#botao2 img{
+    width: 35px;
+    cursor:pointer;
+}
+
+#btn2{
+    background-color: transparent;
+}
+
+#botao3{
+    height: 35px;
+    width: 10%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+#botao3 img{
+    width: 35px;
+    cursor:pointer;
+}
+
+#btn3{
+    background-color: transparent;
+}
+
+#btnlogo{
+    width: 10%;
+    background-color: teal;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-row: 1fr 20fr 1fr;
+}
+
+#btnlogo img{
+    width: 50%;
+    margin: auto;
+    background-color: tomato;
+}
+
+#btnuser{
+    /* text-align: left; */
+    /* height: 105px; */
+    width: 10%;
+    background-color: teal;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-row: 1fr 10fr 1fr;
+}
+
+#btnuser img{
+    /* height: 60%; */
+    
+    width: 50%;
+    margin: auto;
+    background-color: tomato;
+}
