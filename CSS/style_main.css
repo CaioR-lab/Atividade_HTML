@@ -16,23 +16,15 @@ main{
     padding: 30px 25px;
 }
 
-main h1{
-    /* width: 90%;
-    margin: 30px auto 160px;
-    min-height: 400px;
-    background: rgb(190, 190, 190);
-    padding: 30px 25px; */
-
-}
 
 main h1{
     color: rgb(190, 190, 190);
 }
 .cabecalho-crud{
     display: flex;
+    align-self: flex-start;
     justify-content: space-between;
     text-transform: uppercase;
-    margin-left: 50px;
 }
 .botao-principal{
     text-decoration: none;

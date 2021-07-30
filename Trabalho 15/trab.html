@@ -14,7 +14,7 @@
             <button onclick="Parametros()">Passar parametros</button>
             <button onclick="Soma(n1.value, n2.value)">Somar parametros</button>
             <button onclick="AdicionarLink()">AdicionarLink</button>
-            <button onclick="MudarCor()">AdicionarCor</button>
+            <button onclick="MudarCor()" class="btnzinho">AdicionarCor</button>
             <button onclick="AdicionarBorda()">AdicionarBorda</button>
             <input id = "n1" type="number">
             <input id = "n2" type="number">
@@ -66,12 +66,20 @@
             
         }
     
+        let mudou = true;
+        $("#btnzinho").on('click', function MudarCor(){
+        panorama.setVisible(mudou);
+        mudou = !mudou;
+        console.log(mudou)
+        });
+        
         function AdicionarLink(){
             let backgrounddoc = document.getElementById("background")
             backgrounddoc.innerHTML += "<a href='https://github.com/CaioR-lab'>LinkGit</a><br>";
         }
     
         function MudarCor(){
+            
             let backgrounddoc = document.getElementById("background")
             backgrounddoc.style.backgroundColor = "Black"
         }
@@ -80,6 +88,7 @@
             let backgrounddoc = document.getElementById("background")
             backgrounddoc.style.border = "solid gray";
         }
+        
     </script>
 <</script>
 <script src="js"></script>
