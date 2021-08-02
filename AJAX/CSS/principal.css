@@ -1,0 +1,98 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+background-image: url(https://cdn.guidingtech.com/imager/assets/219520/Red-Dead-Redemption-2-wallpapers-4k-1080p-1_4d470f76dc99e18ad75087b1b8410ea9.jpg?1552757144);
+height: 880px;
+width: 100%;
+background-size: 100%;
+}
+
+
+header {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: #000000d0;
+    width: 100%;
+    height: 5%;
+}
+
+
+
+
+#btnlogo img{
+    margin: 2px 0 0 10px;
+    height: 40px;
+    width: 40px;
+
+}
+
+#btnuser img{
+    margin: 2px 10px 0 0;
+    height: 40px;
+    width: 40px;
+}
+
+#menudiv{
+    background-color: tomato;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+#menudiv ul li{
+    text-decoration: none;
+    display: inline-block
+    
+    
+}
+
+#menudiv a{
+    text-decoration: none;
+}
+main {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 94%;
+}
+
+.botaol{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.botaol button{
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+.botaol img{
+    height: 35px;
+    width: 35px;
+    background-color:transparent;
+}
+
+#menulateral {
+    width: 20%;
+    height: auto;
+    background-color: #0000005b;
+}
+
+#areaprincipal {
+    margin: 20px;
+    background-color: rgba(97, 97, 97, 0.432);
+    width: 80%;
+}
+#areaprincipal h1 {
+    margin-left: 10px;
+}
+
+footer{
+    height: 2%;
+    background-color:  #000000d0;
+}
