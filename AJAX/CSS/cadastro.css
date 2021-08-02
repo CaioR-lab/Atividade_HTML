@@ -1,22 +1,30 @@
 label {
-    text-transform: uppercase;
+    margin-right: 15px;
+    text-align: right;
     color: whitesmoke;
+    text-transform: uppercase;
+    width: 120px;
 }
 
-main {
-    height: 100px;
-    width: 400px;
-}
 #cad {
-    display: block;
-    height: 100px;
-    width: 400px;
-    background-color: tomato;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 50%;
+height: 50%;
+background-color: rgba(0, 0, 0, 0.795);
+border: tomato 1px solid;
 }
 
-#cad input{
-
+input {
+    text-align: right;
+    margin-left: 5px;
 }
 
-#cad label{
+.cadelemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
