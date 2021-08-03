@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebView.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="content/css/style_default.css" rel="stylesheet" />
+    <title>Cadastro de Jogos</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <header>
+        <div id="btnlogo">
+            <a href=""></a>
+            <img src="content/img/gamepad.png" />
+        </div>
+
+        <div>
+            <nav id="menudiv">
+                    <ul>
+                        <li>
+                            <a href="Cadastro.aspx">Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="Default.aspx">Default</a>
+                        </li>
+                        <li>
+                            <a href="Listagem.aspx">Listagem</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+        <div id="btnuser">
+            <a href=""></a>
+            <img src="content/img/user.png" />
+        </div>
+    </header>
+    
+    <main>
+        <div id="menulateral">  
+            <div class="botaol">
+                <button onclick="abrecadastro()" class="botaolimg"><img src="content/img/btncircle.png" />
+                </button>
+            </div>
+            <div class="botaol">
+                <button onclick="abrelistagem()" class="botaolimg"><img src="content/img/btnsquare.png" />
+                </button>
+            </div>
+            <div class="botaol">
+                <button onclick="voltatelaprincipal()" class="botaolimg"><img src="content/img/btntriangle.png" />
+                </button>
+            </div>
+        </div>
+
+        <div id="areaprincipal">
+            <asp:ContentPlaceHolder ID="contentbody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </main>
+    </form>
+</body>
+        
+</html>

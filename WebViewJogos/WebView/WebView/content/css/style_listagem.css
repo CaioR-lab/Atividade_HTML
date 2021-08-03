@@ -1,0 +1,27 @@
+﻿#tabela {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: whitesmoke;
+    border: tomato 1px solid;
+}
+
+    #tabela td {
+        border-collapse: collapse;
+        height: 30px;
+        margin: auto;
+    }
+
+    #tabela tr th {
+        text-align: center;
+        color: #000;
+    }
+
+    #tabela td {
+        text-align: center;
+    }
+
+table {
+    width: 100%;
+    margin: auto;
+}

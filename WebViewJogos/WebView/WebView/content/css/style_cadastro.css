@@ -1,0 +1,29 @@
+﻿label {
+    margin-right: 15px;
+    text-align: right;
+    color: whitesmoke;
+    text-transform: uppercase;
+    width: 120px;
+}
+
+#cad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.795);
+    border: tomato 1px solid;
+}
+
+input {
+    text-align: right;
+    margin-left: 5px;
+}
+
+.cadelemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
