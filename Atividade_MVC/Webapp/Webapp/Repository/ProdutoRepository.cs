@@ -18,5 +18,10 @@ namespace Webapp.Repository
         {
             return produtos;
         }
+
+        public void Deletar(Produto model)
+        {
+            produtos.Remove(model);
+        }
     }
 }

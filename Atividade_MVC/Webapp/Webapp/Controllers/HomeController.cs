@@ -37,5 +37,10 @@ namespace Webapp.Controllers
             return RedirectToAction("Lista");
         }
 
+        public ActionResult Deletar(Produto model)
+        {
+
+            return RedirectToAction("Lista");
+        }
     }
 }

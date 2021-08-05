@@ -12,6 +12,8 @@
     <table>
         <thead>
         <tr>
+            <th></th>    
+            <th></th>    
             <th>Id</th>
             <th>Nome</th>
             <th>Descricao</th>
@@ -22,6 +24,7 @@
             @foreach (var item in Model)
             {
                 <tr>
+                    <td><button>Editar</button></td>
                     <td>@item.id</td>
                     <td>@item.nome</td>
                     <td>@item.descricao</td>
