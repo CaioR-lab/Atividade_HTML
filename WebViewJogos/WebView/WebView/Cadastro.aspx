@@ -17,6 +17,6 @@
                 <div class="cadelemento">
                     <label for="">Lançamento:</label><asp:TextBox ID="tbxlancamento" runat="server"></asp:TextBox>
                 </div>
-                <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Text="Salvar" OnClick="Button1_Click" />
         </div>
 </asp:Content>

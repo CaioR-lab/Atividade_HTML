@@ -25,7 +25,11 @@ namespace WebView
 
         protected void dgvjogos_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-
+            int linha = e.RowIndex;
+            int id = Convert.ToInt32(this.dgvjogos.Rows[linha].Cells[1].Text);
+            crud.Deletar(id);
+            this.dgvjogos.DataSource = crud.Listar();
+            this.dgvjogos.DataBind();
         }
     }
 }

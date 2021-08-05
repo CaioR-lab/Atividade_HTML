@@ -34,10 +34,13 @@ namespace WebView.repository
             
         }
 
-        public void Deletar(Jogo JogoID)
+        public void Deletar(int id)
         {
-            Listar();
-            Jogos.Remove(JogoID);
+            Jogo jogo = Jogos.Find(j => j.Id == id);
+            if(jogo != null)
+            {
+                Jogos.Remove(jogo);
+            }
         }
 
 
