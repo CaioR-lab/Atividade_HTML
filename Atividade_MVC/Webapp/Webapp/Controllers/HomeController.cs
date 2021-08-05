@@ -11,6 +11,7 @@ namespace Webapp.Controllers
     public class HomeController : Controller
     {
         ProdutoRepository repository = new ProdutoRepository();
+        
         public ActionResult Index()
         {
             return View();
@@ -37,9 +38,13 @@ namespace Webapp.Controllers
             return RedirectToAction("Lista");
         }
 
-        public ActionResult Deletar(Produto model)
+        //public ActionResult Editar (int id)
+        //{
+        //    repository.Editar(repository.AcharID(id));
+        //}
+        public ActionResult Deletar(int id)
         {
-
+            repository.Deletar(repository.AcharID(id));
             return RedirectToAction("Lista");
         }
     }

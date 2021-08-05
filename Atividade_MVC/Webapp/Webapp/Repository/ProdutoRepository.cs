@@ -19,9 +19,21 @@ namespace Webapp.Repository
             return produtos;
         }
 
+        public Produto AcharID(int id)
+        {
+            Produto model = produtos.Find(p => p.id == id);
+            return model;
+        }
+        //public void Editar(Produto model)
+        //{
+        //    model.id = 
+
+
+        //}
         public void Deletar(Produto model)
         {
             produtos.Remove(model);
         }
+
     }
 }
