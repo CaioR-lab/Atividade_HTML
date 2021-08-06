@@ -19,7 +19,7 @@ namespace Webapp.Controllers
 
         public ActionResult Lista()
         {
-            List<Produto> model = repository.Lista();
+            List<Produto> model = repository.Read();
             ViewBag.Message = "Your application description page.";
 
             return View(model);
@@ -32,19 +32,30 @@ namespace Webapp.Controllers
             return View();
         }
 
+        [HttpPost]
         public ActionResult Salvar(Produto model)
         {
             repository.Salvar(model);
             return RedirectToAction("Lista");
         }
 
-        //public ActionResult Editar (int id)
-        //{
-        //    repository.Editar(repository.AcharID(id));
-        //}
-        public ActionResult Deletar(int id)
+        [HttpGet]
+        public ActionResult Editar(int id)
         {
-            repository.Deletar(repository.AcharID(id));
+            Produto model = repository.Read(id);
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Editar (Produto model)
+        {
+            repository.Editar(model);
+            return RedirectToAction("Lista");
+        }
+
+        public ActionResult Deletar(int id )
+        {
+            repository.Deletar(id);
             return RedirectToAction("Lista");
         }
     }

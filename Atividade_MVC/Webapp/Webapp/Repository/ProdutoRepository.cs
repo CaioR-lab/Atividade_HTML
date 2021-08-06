@@ -14,25 +14,29 @@ namespace Webapp.Repository
             produtos.Add(model);
         }
 
-        public List<Produto> Lista()
+        public List<Produto> Read()
         {
             return produtos;
         }
 
-        public Produto AcharID(int id)
+        public Produto Read(int id)
         {
-            Produto model = produtos.Find(p => p.id == id);
-            return model;
+            return produtos.Find(p => p.id == id);
         }
-        //public void Editar(Produto model)
-        //{
-        //    model.id = 
-
-
-        //}
-        public void Deletar(Produto model)
+        public void Editar(Produto model)
         {
+            int index = produtos.FindIndex(p => p.id == model.id);
+
+            produtos[index] = model;
+
+        }
+        public void Deletar(int id)
+        {
+            Produto model = Read(id);
+            if (model != null)
+            {
             produtos.Remove(model);
+            }
         }
 
     }
